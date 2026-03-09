@@ -14,3 +14,19 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       modelDisplayLabel: "OpenRouter"
+
+interface:
+  memories: true
+
+memory:
+  disabled: false
+  personalize: true
+  tokenLimit: 1200
+  messageWindowSize: 4
+  validKeys:
+    - "user_preferences"
+    - "conversation_context"
+    - "learned_facts"
+  agent:
+    provider: "OpenRouter"
+    model: "openai/gpt-4.1-mini"
