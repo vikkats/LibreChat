@@ -1,6 +1,5 @@
 version: 1.0.9
-
-cache: true
+cache: false
 
 endpoints:
   custom:
@@ -14,6 +13,24 @@ endpoints:
       summarize: false
       summaryModel: "current_model"
       modelDisplayLabel: "OpenRouter"
+
+    - name: "NanoGPT"
+      apiKey: "${NANO_GPT_API_KEY}"
+      baseURL: "https://nano-gpt.com/api/v1/"
+      models:
+        default: [
+          "openai/gpt-5.2",
+          "anthropic/claude-opus-4.5",
+          "google/gemini-3-flash-preview",
+          "moonshotai/kimi-k2.5:thinking"
+        ]
+      fetch: true
+      addParams:
+        reasoning_content_compat: true
+      titleConvo: true
+      titleModel: "openai/gpt-5.2"
+      modelDisplayLabel: "NanoGPT"
+      iconUrl: "https://nano-gpt.com/logo.png"
 
 interface:
   memories: true
