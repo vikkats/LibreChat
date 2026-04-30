@@ -15,7 +15,7 @@ endpoints:
       titleModel: "current_model"
       summarize: false
       summaryModel: "current_model"
-      modelDisplayLabel: "OpenRouter"
+      modelDisplayLabel: "OpenRouter TEST"
 
     - name: "NanoGPT"
       apiKey: "${NANO_GPT_API_KEY}"
