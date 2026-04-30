@@ -8,6 +8,8 @@ endpoints:
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
+        default:
+          - "openai/gpt-4o"
         fetch: true
       titleConvo: true
       titleModel: "current_model"
@@ -19,6 +21,8 @@ endpoints:
       apiKey: "${NANO_GPT_API_KEY}"
       baseURL: "https://nano-gpt.com/api/v1"
       models:
+        default:
+          - "kimi-k2-5"
         fetch: true
       titleConvo: true
       titleModel: "current_model"
