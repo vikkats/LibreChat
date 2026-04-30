@@ -46,4 +46,4 @@ memory:
     - "learned_facts"
   agent:
     provider: "OpenRouter"
-    model: "openai/gpt-4.1-mini"
+    model: "openai/gpt-4o"
