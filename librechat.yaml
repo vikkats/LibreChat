@@ -8,24 +8,18 @@ endpoints:
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
-        default:
-          - "openai/gpt-4o"
         fetch: true
       titleConvo: true
       titleModel: "current_model"
       summarize: false
       summaryModel: "current_model"
-      modelDisplayLabel: "OpenRouter TEST"
+      modelDisplayLabel: "OpenRouter"
 
     - name: "NanoGPT"
       apiKey: "${NANO_GPT_API_KEY}"
-      baseURL: "https://nano-gpt.com/api/v1/"
+      baseURL: "https://nano-gpt.com/api/v1"
       models:
-        default:
-          - "openai/gpt-5.2"
         fetch: true
-      addParams:
-        reasoning_content_compat: true
       titleConvo: true
       titleModel: "current_model"
       summarize: false
@@ -46,4 +40,4 @@ memory:
     - "learned_facts"
   agent:
     provider: "OpenRouter"
-    model: "openai/gpt-4o"
+    model: "openai/gpt-4.1-mini"
